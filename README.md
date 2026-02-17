@@ -1,83 +1,107 @@
-# vigilstate-showcase26
-AI-powered project operations assistant built to automate up to 80% of PM routine workflows
 # Vigilstate
 
 Vigilstate is an AI-powered Project Operations Assistant designed to help project managers delegate up to 80% of routine coordination work.
 
-Built from scratch in 3 months using AI-assisted development workflows (Claude Code), the system integrates structured project management logic (PMBOK-based processes) with modern LLM capabilities.
+Built from scratch in 3 months using AI-assisted development workflows (Claude Code), the system integrates structured PM logic with modern LLM capabilities to surface risks early and accelerate decisions.
+
+Live product: https://www.vigilstate.com/
 
 ---
 
 ## 🎯 Problem
 
-Project managers spend a significant portion of their time on:
+Project managers spend excessive time on:
 - Status tracking
-- Risk identification
+- Risk monitoring
 - Stakeholder communication
-- Process documentation
-- Coordination between field and office
+- Documentation & coordination
 
-This creates overload and reduces strategic decision-making time.
+This reduces strategic focus and increases operational friction.
 
 ---
 
 ## 🚀 Solution
 
-Vigilstate acts as an AI operations layer that:
+Vigilstate adds an AI operations layer that:
 
-- Analyzes core PM processes
-- Surfaces risks early
-- Automates routine coordination logic
-- Structures information for decision-making
-- Bridges communication between teams
-
----
-
-## 🧠 Core Capabilities
-
-- AI-driven process analysis (PMBOK-inspired 48 process framework)
-- Risk detection & impact highlighting
-- Workflow structuring & automation
-- AI-assisted project documentation
-- Task & stakeholder context mapping
+- Analyzes structured project data
+- Detects risks early
+- Suggests mitigation strategies
+- Structures stakeholder communication
+- Reduces routine workload
 
 ---
-
 ## 🏗 Architecture Overview
 
-Frontend: React / TypeScript  
-Backend: Node-based API layer  
-AI Layer: LLM integration via Claude Code workflows  
-Database: Structured relational model  
+            ┌──────────────────────────────┐
+            │          End User            │
+            │  (Project Manager / Team)    │
+            └──────────────┬───────────────┘
+                           │
+                           ▼
+            ┌──────────────────────────────┐
+            │      Frontend (React)        │
+            │  UI • Forms • Dashboards     │
+            └──────────────┬───────────────┘
+                           │
+                           ▼
+            ┌──────────────────────────────┐
+            │       API Layer (Node)       │
+            │  Routing • Auth • Validation │
+            └──────────────┬───────────────┘
+                           │
+                           ▼
+            ┌──────────────────────────────┐
+            │        AI Engine Layer       │
+            │   LLM Integration (Claude)   │
+            │  Prompt Logic • Context Mgmt │
+            └──────────────┬───────────────┘
+                           │
+                           ▼
+            ┌──────────────────────────────┐
+            │     Process Logic Engine     │
+            │  PMBOK-based Process Model   │
+            │  Risk Analysis • Automation  │
+            └──────────────┬───────────────┘
+                           │
+                           ▼
+            ┌──────────────────────────────┐
+            │        Data Layer (DB)       │
+            │  Projects • Tasks • Risks    │
+            └──────────────────────────────┘
+The system is structured as a layered architecture separating UI, API, AI reasoning, and process logic to ensure scalability, maintainability, and responsible AI integration.
 
-(Architecture diagram below)
+
+Layered architecture separates UI, API, AI reasoning, and business logic to ensure maintainability and responsible AI integration.
 
 ---
 
-## 🛠 Development Approach
+## 🤖 Example AI Workflow (Risk Detection)
 
-The application was built using AI-assisted development workflows:
+1. User submits project update (budget, schedule, resources).
+2. API validates & structures context.
+3. AI Engine receives:
+   - Project state
+   - Historical data
+   - Risk categories
+4. LLM generates:
+   - Identified risks
+   - Impact estimation
+   - Suggested actions
+5. Process logic validates output before surfacing to user.
 
-- Claude Code for architecture scaffolding
-- AI-assisted refactoring
-- AI-generated test logic validation
-- Iterative system design with human-in-the-loop validation
-
----
-
-## 📈 Impact
-
-- Designed to offload up to 80% of PM routine operations
-- Enables faster decision-making
-- Improves risk visibility
-- Reduces coordination overhead
+Result: Faster risk visibility and decision support.
 
 ---
 
-## 🌍 Live Product
+## 🛠 AI-Assisted Development
 
-Website: https://www.vigilstate.com/
+- Built using Claude Code for structured scaffolding & refactoring
+- Human-in-the-loop validation
+- Secure prompt design
+- System decomposition before code generation
+- Iterative architecture refinement
 
----
+Core production codebase remains private.
 
-*Note: Core production codebase remains private.*
+
